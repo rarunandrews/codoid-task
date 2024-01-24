@@ -83,9 +83,10 @@ p{
 }
 h1{
     font-size: 40px;
+    color: #202020;
 }
 h2,h3{
-    color: #292828;
+    color: #3b3b3b;
 }
 .highlight{
     color:#61b402;
@@ -113,12 +114,18 @@ h2,h3{
 .about-states h1{
     display: flex;
     flex-direction: column;
+    color: #303030;
 }
 .small-text{
     font-weight: lighter;
     font-size: 18px;
     color: #61b402;
     text-align: center;
+}
+.sub-head{
+    text-align: center;
+    margin: 0 30px;
+    font-weight: 500;
 }
 .what-we-do{
     padding: 100px 0;
@@ -139,6 +146,7 @@ h2,h3{
     border: 1px solid #ddd;
     padding: 20px;
     text-align: center;
+    border-radius: 10px;
 }
 .card:hover{
     border: 2px solid #61b402;
@@ -147,7 +155,7 @@ h2,h3{
     width:70px;
 }
 .projects{
-    padding: 100px 0;
+    padding: 80px 0;
 }
 .projects h1{
     text-align: center;
@@ -159,10 +167,10 @@ h2,h3{
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
-    margin: 100px;
+    margin: 100px 30px;
 }
 .project-content{
-    padding: 20px 50px;
+    padding: 20px 30px;
     width:600px;
 }
 .project-card img{
@@ -174,10 +182,11 @@ button{
     padding: 10px 40px;
     color: #5d5d5d;
     font-size: 17px;
-    background-color: #f3f3f3;
+    background-color: #fff;
     border: 2px solid #61b402;
     border-radius: 8px;  
     transition: 0.3s; 
+    margin-top: 10px;
 }
 button:hover{
     padding: 10px 45px;
@@ -248,6 +257,7 @@ textarea{
     width: 400px;
     height: 120px;
     font-size: 15px;
+    font-family: poppins, sans-serif;
     margin-bottom: 30px;
     border: 1.5px solid #5d5d5d53;
     border-radius: 5px;
@@ -271,10 +281,11 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #303030;
+    color: #5d5d5d;
 }
 footer p{
     font-size: 13px;
+    color: #202020;
 }
 
 @media (max-width: 1024px) {
@@ -303,7 +314,7 @@ footer p{
     }
     .nav-items a {
         display: block;
-        padding: 15px;
+        padding: 25px;
     }
     .menu-icon:before {
         content: '\2630';
@@ -330,24 +341,33 @@ footer p{
     .about-content{
         width: 80%;
     }
+    .about-states h1{
+        margin: 30px 20px;
+    }
     .about-states{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-items: center;
     }
     .project-card{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        justify-content: center;
         text-align: center;
+        margin: 100px 10px;
     }
     .project-content{
-        width: 350px;
+        width: 80%;
+    }
+    .project-content{
+        padding: 20px 0;
     }
     .project-card img{
-        width: 300px;
-        height: 200px;
-        border-radius: 2px;
+        width: 80%;
+        height: 60%;
+        border-radius: 10px;
     }
     input,textarea{
         width:300px;
